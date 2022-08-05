@@ -1,0 +1,20 @@
+[package]
+name = "ecs"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+[profile.dev]
+debug = true
+split-debuginfo = 'unpacked'
+opt-level = 0
+overflow-checks = true
+
+
+
+[dependencies]
+termion = "^1.5.6"
+rand = "^0.8.4"
+specs = "^0.17.0"
+euclid = "^0.22.6"
+specs-derive = "^0.4.1"
